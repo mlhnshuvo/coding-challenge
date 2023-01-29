@@ -14,7 +14,6 @@ const UpdateForm = ({ modal, modalHandler }) => {
     selector: "",
   });
   const [btnPress, setBtnPress] = useState(false);
-  const sessionID = localStorage.getItem("sessionID");
 
   const onChangeHandler = (e) => {
     setValue({
