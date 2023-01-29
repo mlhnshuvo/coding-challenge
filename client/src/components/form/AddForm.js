@@ -54,14 +54,14 @@ const Form = () => {
           name: "",
           selector: "",
         });
+        setTimeout(() => {
+          setSuccessMessage("");
+        }, 3000);
       })
       .catch((err) => {
         setErrorMessage(err.response.data);
         setBtnPress(false);
       });
-    setTimeout(() => {
-      setSuccessMessage("");
-    }, 3000);
   };
 
   return (
